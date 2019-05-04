@@ -1,0 +1,31 @@
+[{
+	"title" : "后台首页",
+	"icon" : "icon-computer",
+	"href" : "page/main.html",
+	"spread" : false
+},{
+	"title" : "基础信息",
+	"icon" : "&#xe630;",
+	"href" : "",
+	"spread" : true,
+	"children" : [
+	{
+			"title" : "用户信息列表",
+			"icon" : "&#xe61c;",
+			"href" : "openUsers",
+			"spread" : false
+		}
+	]
+},{
+	"title" : "系统信息",
+	"icon" : "&#xe630;",
+	"href" : "",
+	"spread" : true,
+	"children" : [{
+			"title" : "404页面",
+			"icon" : "&#xe61c;",
+			"href" : "../404.html",
+			"spread" : false
+		}
+	]
+}]

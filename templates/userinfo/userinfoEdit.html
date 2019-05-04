@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>用户信息修改--后台管理模板</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="../static/layui/css/layui.css" media="all" />
+	<style type="text/css">
+		.layui-form { width:40%; float:left; margin-left:5%; margin-top: 3%}
+	</style>
+</head>
+<body class="childrenBody">
+	<form class="layui-form" name="userinfoform" style="width:80%;">
+		<div class="layui-form-item">
+			<label class="layui-form-label">ID</label>
+			<div class="layui-input-inline">
+				<input type="text" class="layui-input" name="id" value="{{ m.id}}" lay-verify="required">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">用户名</label>
+			<div class="layui-input-inline">
+				<input type="text" class="layui-input" name="username" lay-verify="required" value="{{ m.username}}">
+			</div>
+		</div>
+		<div class="layui-form-item">
+			<label class="layui-form-label">登陆密码</label>
+			<div class="layui-input-inline">
+				<input type="text" class="layui-input" name="password" lay-verify="required" value="{{ m.password}}">
+			</div>
+		</div>
+
+		<div class="layui-form-item">
+			<div class="layui-input-inline">
+				<button class="layui-btn" lay-submit="" lay-filter="addUser">立即提交</button>
+				<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+		    </div>
+		</div>
+	</form>
+	<script type="text/javascript" src="../static/layui/layui.js"></script>
+	<script type="text/javascript" src="../static/js/userinfo/userinfoEdit.js"></script>
+</body>
+</html>
